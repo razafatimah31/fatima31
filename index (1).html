@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | All my links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#E6EEF2; --ink:#14263B; --card:#14263B; --card-text:#fff; --accent:#F5B700; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0F1B2A; --ink:#EAF1F6; --card:#EAF1F6; --card-text:#0F1B2A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+         font-family:'DM Sans',system-ui,sans-serif; display:flex; justify-content:center; padding:48px 20px; }
+  main { width:100%; max-width:440px; text-align:center; }
+  .avatar { width:104px; height:104px; border-radius:50%; margin:0 auto 18px; display:grid; place-items:center;
+            font:700 36px 'Bricolage Grotesque',sans-serif; background:var(--accent); color:#14263B; }
+  /* To use your photo: replace the initials with <img src="photo.jpg" alt=""> and add: .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover} */
+  h1 { font:700 32px/1.1 'Bricolage Grotesque',sans-serif; margin:0 0 8px; }
+  p.bio { margin:0 0 32px; font-size:17px; line-height:1.5; opacity:.8; }
+  nav { display:flex; flex-direction:column; gap:12px; }
+  a.link { display:block; padding:16px 20px; border-radius:14px; background:var(--card); color:var(--card-text);
+           text-decoration:none; font-weight:500; font-size:17px; transition:transform .15s, box-shadow .15s; }
+  a.link:hover { transform:translateY(-2px); box-shadow:0 0 0 3px var(--accent); }
+  a.link:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+  footer { margin-top:36px; font-size:14px; opacity:.6; }
+  @media (prefers-reduced-motion: reduce) { a.link { transition:none; } }
+</style>
+</head>
+<body>
+<main>
+  <!-- 1. Change the initials, name and bio -->
+  <div class="avatar" aria-hidden="true">YN</div>
+  <h1>Fatima Raza</h1>
+  <p class="bio">Content creator. New posts every week. Follow me wherever you like to watch.</p>
+
+  <!-- 2. Replace each # with your real profile link. Delete any line you don't need. -->
+  <nav>
+    <a class="link" href="https://www.instagram.com/razafatimah31/">Instagram</a>
+    <a class="link" href="https://www.tiktok.com/@fatimahraza1">TikTok</a>
+    <a class="link" href="https://www.youtube.com/@FatimahRaza-h7b">YouTube</a>
+    <a class="link" href="https://www.facebook.com/profile.php?id=61594629884514">Facebook</a>
+    <a class="link" href="https://www.pinterest.com/razafatimah31/">pinterest</a>
+    <a class="link" href="mailto:razafatimah31@gmail.com">gmail</a>
+  </nav>
+
+  <footer>©Fatima Raza</footer>
+</main>
+</body>
+</html>
